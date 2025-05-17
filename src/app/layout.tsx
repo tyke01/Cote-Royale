@@ -34,7 +34,7 @@ export default function RootLayout({
       lang="en"
       className={`${raleway.variable} ${gambarino.variable} antialiased`}
     >
-      <body className="bg-neutral-900 text-white">
+      <body className="bg-neutral-900 text-white overflow-x-hidden">
         <Navbar />
         <main className="pt-14 md:pt-14">{children}</main>
         <Footer />
