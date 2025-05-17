@@ -7,6 +7,7 @@ import { FC } from "react";
 import { Bounded } from "@/components/bounded";
 import { FadeIn } from "@/components/fade-in";
 import { RevealText } from "@/components/reveal-text";
+import { ButtonLink } from "@/components/button-link";
 
 /**
  * Props for `Hero`.
@@ -25,7 +26,7 @@ const Hero: FC<HeroProps> = ({ slice }) => {
     >
       <FadeIn
         vars={{ scale: 1, opacity: 0.5 }}
-        className="bg-image absolute inset-0 motion-safe:scale-125 opacity-0"
+        className="bg-image absolute inset-0 opacity-0 motion-safe:scale-125"
       >
         <PrismicNextImage
           field={slice.primary.image}
@@ -58,16 +59,11 @@ const Hero: FC<HeroProps> = ({ slice }) => {
           className="mt-8 translate-y-5"
         >
           {slice.primary.button.map((link) => (
-            <PrismicNextLink
+            <ButtonLink
               key={link.key}
               field={link}
-              className={clsx(
-                "inline-flex items-center justify-center px-12 py-4 text-center font-extrabold tracking-wider uppercase transition-colors duration-300",
-                link.variant === "Secondary"
-                  ? "border border-white text-white hover:bg-white/20"
-                  : "bg-white text-black hover:bg-white/80",
-                "w-fit",
-              )}
+              className="w-fit"
+              variant="secondary"
             />
           ))}
         </FadeIn>
