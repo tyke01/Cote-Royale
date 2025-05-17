@@ -1,0 +1,25 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"eyebrow": {
+				"__TYPE__": "FieldContent",
+				"value": "straw",
+				"type": "Text"
+			},
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Mollit duis sunt in laboris voluptate nulla nisi. Ut veniam duis est. Et sint consectetur quis amet veniam ipsum mollit aliquip aliqua irure magna qui occaecat proident."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
