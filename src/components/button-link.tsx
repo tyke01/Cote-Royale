@@ -13,7 +13,7 @@ export const ButtonLink = ({
   return (
     <PrismicNextLink
       className={clsx(
-        "inline-flex items-center justify-center px-12 py-4 text-center font-extrabold tracking-wider uppercase transition-colors duration-300",
+        "inline-flex items-center justify-center px-12 py-4 text-center font-extrabold tracking-wider uppercase transition-colors duration-300 relative",
         variant === "secondary"
           ? "border border-white text-white hover:bg-white/20"
           : "bg-white text-black hover:bg-white/80",
