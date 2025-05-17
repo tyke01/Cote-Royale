@@ -3,6 +3,7 @@ import { Raleway } from "next/font/google";
 import localFont from "next/font/local";
 
 import "./globals.css";
+import { Footer } from "@/components/footer";
 
 const raleway = Raleway({
   variable: "--font-raleway",
@@ -28,8 +29,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${raleway.variable} ${gambarino.variable} antialiased`}>
-      <body>{children}</body>
+    <html
+      lang="en"
+      className={`${raleway.variable} ${gambarino.variable} antialiased`}
+    >
+      <body className="bg-neutral-900 text-white">
+        {/* <Navbar /> */}
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
