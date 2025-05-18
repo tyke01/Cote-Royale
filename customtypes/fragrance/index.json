@@ -58,7 +58,7 @@
         "config": {
           "label": "Scent Profile",
           "placeholder": "",
-          "options": ["spicy", "woody", "freah"],
+          "options": ["spicy", "woody", "fresh"],
           "default_value": "spicy"
         }
       },
